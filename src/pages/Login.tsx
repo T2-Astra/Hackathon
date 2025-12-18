@@ -4,7 +4,7 @@ import { ArrowLeft, Mail, Lock, Eye, EyeOff } from "lucide-react";
 import { motion } from "motion/react";
 import { useTheme } from "../components/contexts/theme-provider";
 
-const GOOGLE_CLIENT_ID = "669143150370-sr1f18i9f5csb7otdsrdbum12kvakl69.apps.googleusercontent.com";
+const GOOGLE_CLIENT_ID = import.meta.env.VITE_GOOGLE_CLIENT_ID;
 
 export default function Login() {
   const navigate = useNavigate();
